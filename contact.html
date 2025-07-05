@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - REDSTORE</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" width="125px" /></a>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" /></a>
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+    </div>
+  </div>
+
+  <div class="small" style="padding: 50px 20px;">
+    <div class="row">
+      <div class="col-2">
+        <h1>Contact REDSTORE</h1>
+        <p>
+          Got questions, feedback, or just want to say hi? <br> Fill out the form or use the info below — we're here to help! <br>
+          We can Help You
+        </p>
+        <p style="margin-top: 200px;">
+          <strong>Email:</strong> support@redstore.com <br>
+          <strong>Phone:</strong> +91-6374804289 <br>
+          <strong>Address:</strong> REDSTORE HQ, Sector 5, Coimbatore , India
+        </p>
+      </div>
+      <div class="col-2">
+        <form style="width: 100%; max-width: 400px;">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and iOS mobile phones.</p>
+          <div class="app-logo">
+            <img src="images/play-store.png" />
+            <img src="images/app-store.png" />
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo-white.png" />
+          <p>Our Purpose is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">Copyright 2025 - RedStore</p>
+    </div>
+  </div>
+
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "300px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+</body>
+</html>
